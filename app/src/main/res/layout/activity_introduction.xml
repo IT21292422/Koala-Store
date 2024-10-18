@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IntroductionActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="343dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_introduction"
+                android:textAlignment="center"
+                android:textSize="31sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_introduction"
+                android:textAlignment="center"
+                android:layout_marginTop="32dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/grey"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startButton"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:background="@drawable/lavender_bg"
+                android:textColor="@color/white"
+                android:text="@string/button_introduction"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/signinTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signin_introduction"
+                android:textSize="18sp"
+                android:layout_marginTop="-20dp"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
